@@ -39,13 +39,13 @@ dataset_path: /path/to/KITTI
 ## 🔑 Training
 
 ###
-```
 Stage 1: Train the MDF module and DLA backbone
+```
 python train.py --config configs/mdf.yaml
 ```
 ###
-```
 Stage 2: Train the 2D Detector and VPF module
+```
 python train.py --config configs/2d.yaml
 ```
 ## 🧪 Evaluation
