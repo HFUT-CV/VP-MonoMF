@@ -37,12 +37,16 @@ Set the dataset path in `configs/dataset.yaml`:
 dataset_path: /path/to/KITTI
 ```
 ## 🔑 Training
-```bash
-Stage 1: Train MDF (3D branch)
-python train.py --config configs/mdf.yaml
-Stage 2: Train 2D detector
-python train.py --config configs/2d.yaml
+
+###
 ```
+Stage 1: Train the MDF module and DLA backbone
+python train.py --config configs/mdf.yaml
+```
+###
+Stage 2: Train the 2D Detector and VPF module
+python train.py --config configs/2d.yaml
+
 ## 🧪 Evaluation
 ```
 python eval.py --config configs/eval.yaml --checkpoint path/to/checkpoint.pth
