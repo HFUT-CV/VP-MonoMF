@@ -33,7 +33,6 @@ We use the **KITTI 3D Object Detection** dataset.
 Download it from the [KITTI website](http://www.cvlibs.net/datasets/kitti/).  
 
 Set the dataset path in `configs/dataset.yaml`:
-
 ```yaml
 dataset_path: /path/to/KITTI
 ```
@@ -41,17 +40,13 @@ dataset_path: /path/to/KITTI
 Stage 1: Train MDF (3D branch)
 ```bash
 python train.py --config configs/mdf.yaml
-
 Stage 2: Train 2D detector
 ```bash
 python train.py --config configs/2d.yaml
-
 ```
 ## 🧪 Evaluation
 ```
 python eval.py --config configs/eval.yaml --checkpoint path/to/checkpoint.pth
-
-
 ```
 ## 📌 Citation
 
