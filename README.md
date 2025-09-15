@@ -40,7 +40,6 @@ dataset_path: /path/to/KITTI
 ```bash
 Stage 1: Train MDF (3D branch)
 python train.py --config configs/mdf.yaml
-```bash
 Stage 2: Train 2D detector
 python train.py --config configs/2d.yaml
 ```
