@@ -56,7 +56,7 @@ python eval.py --config configs/eval.yaml --checkpoint path/to/checkpoint.pth
 
 If you find this work useful, please cite our paper:
 
-@article{2025vpmonomf,
+@article{VP-MonoMF,
   title={Visual Prompt guided Monocular 3D Object Detection with Multiscale Fusion},
   author={...},
   journal={...},
