@@ -26,7 +26,17 @@ cd VP-MonoMF
 conda create -n vpmonomf python=3.8
 conda activate vpmonomf
 pip install -r requirements.txt
+```
+## 📊 Dataset
 
+We use the **KITTI 3D Object Detection** dataset.  
+Download it from the [KITTI website](http://www.cvlibs.net/datasets/kitti/).  
+
+Set the dataset path in `configs/dataset.yaml`:
+
+```yaml
+dataset_path: /path/to/KITTI
+```
 ## 🔑 Training
 Stage 1: Train MDF (3D branch)
 ```bash
@@ -36,12 +46,13 @@ Stage 2: Train 2D detector
 ```bash
 python train.py --config configs/2d.yaml
 
-
+```
 ## 🧪 Evaluation
-
+```
 python eval.py --config configs/eval.yaml --checkpoint path/to/checkpoint.pth
 
 
+```
 ## 📌 Citation
 
 If you find this work useful, please cite our paper:
