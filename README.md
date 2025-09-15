@@ -26,3 +26,29 @@ cd VP-MonoMF
 conda create -n vpmonomf python=3.8
 conda activate vpmonomf
 pip install -r requirements.txt
+
+## 🔑 Training
+Stage 1: Train MDF (3D branch)
+```bash
+python train.py --config configs/mdf.yaml
+
+Stage 2: Train 2D detector
+```bash
+python train.py --config configs/2d.yaml
+
+
+## 🧪 Evaluation
+
+python eval.py --config configs/eval.yaml --checkpoint path/to/checkpoint.pth
+
+
+## 📌 Citation
+
+If you find this work useful, please cite our paper:
+
+@article{2025vpmonomf,
+  title={Visual Prompt guided Monocular 3D Object Detection with Multiscale Fusion},
+  author={...},
+  journal={...},
+  year={2025}
+}
