@@ -6,7 +6,7 @@
 ## 📦 Installation
 ```bash
 git clone https://github.com/HFUT-CV/VP-MonoMF.git
-cd VP-MonoMF
+cd xxxxx
 conda create -n vpmonomf python=3.8
 conda activate vpmonomf
 pip install -r requirements.txt
