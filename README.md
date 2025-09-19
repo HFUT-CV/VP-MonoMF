@@ -1,4 +1,4 @@
-# VP-MonoMF: Visual Prompt guided Monocular 3D Object Detection with Multiscale Fusion
+
 
 [Project Page](https://github.com/HFUT-CV/VP-MonoMF)
 
@@ -36,13 +36,3 @@ python train.py --config configs/2d.yaml
 ```
 python eval.py --config configs/eval.yaml --checkpoint path/to/checkpoint.pth
 ```
-## 📌 Citation
-
-If you find this work useful, please cite our paper:
-
-@article{VP-MonoMF,
-  title={Visual Prompt guided Monocular 3D Object Detection with Multiscale Fusion},
-  author={...},
-  journal={...},
-  year={2025}
-}
