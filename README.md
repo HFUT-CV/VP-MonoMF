@@ -58,7 +58,7 @@ Single GPU training:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py \
     --batch_size 8 \
-    --config runs/monocd.yaml \
+    --config runs/TM_MonoVP.yaml \
     --output output/vp_monofm
 ```
 
@@ -66,7 +66,7 @@ Multi-GPU training (2 GPUs):
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python tools/plain_train_net.py \
     --batch_size 16 \
-    --config runs/monocd.yaml \
+    --config runs/TM_MonoVP.yaml \
     --output output/vp_monofm \
     --num_gpus 2
 ```
@@ -76,7 +76,7 @@ CUDA_VISIBLE_DEVICES=0,1 python tools/plain_train_net.py \
 Evaluate a trained checkpoint:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py \
-    --config runs/monocd.yaml \
+    --config runs/TM_MonoVP.yaml \
     --ckpt path/to/checkpoint.pth \
     --eval
 ```
@@ -105,7 +105,7 @@ VP-MonoFM/
 
 ## Configuration
 
-Default config: `runs/monocd.yaml`
+Default config: `runs/TM_MonoVP.yaml`
 
 Key parameters in `config/defaults.py`:
 ```python
