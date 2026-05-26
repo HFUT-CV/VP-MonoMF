@@ -5,7 +5,7 @@ Monocular 3D object detection implementation with multiscale depth fusion, 3D re
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_REPO/VP-MonoFM.git
+git clone https://github.com/HFUT-CV/VP-MonoFM.git
 cd VP-MonoFM
 
 conda create -n vp_monofm python=3.8
